@@ -1,0 +1,21 @@
+@import "styles/colors";
+
+body {
+  background-color: $bg-gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force ant input number to take up all width when used inside col */
+.ant-col {
+  .ant-picker,
+  .ant-input-number {
+    width: 100%;
+  }
+}
+
+// Fix for blurry images on retina https://stackoverflow.com/questions/13347947/css-filter-on-retina-display-fuzzy-images
+img {
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
