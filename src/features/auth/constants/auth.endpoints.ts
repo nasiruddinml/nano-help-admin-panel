@@ -4,4 +4,5 @@ export enum AuthEndpointsEnum {
   RESET_PASSWORD = "reset-password",
   REFRESH_TOKEN = "refresh-token",
   USERS = "users",
+  SIGNUP = "register",
 }

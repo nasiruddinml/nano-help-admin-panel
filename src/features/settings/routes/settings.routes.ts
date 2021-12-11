@@ -2,8 +2,8 @@ import { PermissionEnum } from "@app/features/permissions/permissions";
 import { RouteItemDef } from "@app/types/route.types";
 
 import { SettingsPathsEnum } from "../constants/settings.paths";
-import ProjectsScreen from "../screens/ProjectsScreen/ProjectsScreen";
 import UsersScreen from "../screens/UsersScreen/UsersScreen";
+import VolunteersScreen from "../screens/VolunteersScreen/VolunteersScreen";
 import SettingsRoutes from "./SettingsRoutes";
 
 const SETTINGS_SCREEN: RouteItemDef = {
@@ -13,15 +13,6 @@ const SETTINGS_SCREEN: RouteItemDef = {
   component: SettingsRoutes,
   nestedRoutes: [
     /**
-     * A single screen
-     */
-    {
-      id: "projects",
-      path: SettingsPathsEnum.PROJECTS,
-      navigationTitle: "settingsProjects.navigationTitle",
-      component: ProjectsScreen,
-    },
-    /**
      * A group of screens
      * - group title
      * - nested routes
@@ -30,6 +21,13 @@ const SETTINGS_SCREEN: RouteItemDef = {
       id: "admin-settings",
       groupTitle: "settings.groupUsersSettings",
       nestedRoutes: [
+        {
+          id: "volunteer",
+          path: SettingsPathsEnum.VOLUNTEER,
+          navigationTitle: "settingsVolunteer.navigationTitle",
+          component: VolunteersScreen,
+          permissions: [PermissionEnum.USERS_READ],
+        },
         {
           id: "users",
           path: SettingsPathsEnum.USERS,

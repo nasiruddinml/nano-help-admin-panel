@@ -61,9 +61,15 @@ i18next.use(initReactI18next).init({
           loginTitle: "Sign in",
           inputEmailLabel: "Email",
           inputPasswordLabel: "Password",
+          inputConfirmPasswordLabel: "Confirm password",
           loginButton: "Sign in",
           logout: "Log out",
           messageSuccess: "Sign in success",
+          messageError: "Sign in failed",
+          signupTitle: "Sign up",
+          signupButton: "Sign up",
+          signupMessageSuccess: "Sign up success",
+          signupMessageError: "Sign up failed",
         },
         home: {
           navigationTitle: "Home",
@@ -72,7 +78,7 @@ i18next.use(initReactI18next).init({
         },
         settings: {
           navigationTitle: "Settings",
-          groupUsersSettings: "Group Title",
+          groupUsersSettings: "Manage roles",
         },
         settingsProjects: {
           navigationTitle: "Projects",
@@ -100,6 +106,11 @@ i18next.use(initReactI18next).init({
           inputFirstNamePlaceholder: "Enter first name...",
           inputLastNameLabel: "Last name",
           inputLastNamePlaceholder: "Enter last name...",
+        },
+        settingsVolunteer: {
+          navigationTitle: "Volunteer",
+          title: "Volunteer",
+          text: "Content",
         },
       },
     },

@@ -1,5 +1,5 @@
 export enum SettingsPathsEnum {
   SETTINGS = "/settings",
-  PROJECTS = "/settings/projects",
+  VOLUNTEER = "/settings/volunteer",
   USERS = "/settings/users",
 }

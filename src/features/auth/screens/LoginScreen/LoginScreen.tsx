@@ -1,6 +1,7 @@
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Card, Col, Input, message, Row } from "antd";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 import Button from "@app/components/atoms/Button/Button";
 import Form, { Item, useForm } from "@app/components/atoms/Form/Form";
@@ -69,6 +70,9 @@ const LoginScreen = () => {
               <Button type="primary" htmlType="submit" loading={loading}>
                 {t("auth.loginButton")}
               </Button>
+              <Link className={styles["float-right"]} to="/signup">
+                {t("auth.signupButton")}
+              </Link>
             </Item>
           </Form>
         </Card>

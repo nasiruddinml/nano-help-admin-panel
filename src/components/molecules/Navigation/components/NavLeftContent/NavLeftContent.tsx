@@ -3,7 +3,7 @@ import { memo } from "react";
 import { MenuProps } from "antd/lib/menu";
 import cx from "classnames";
 
-import { ReactComponent as Logo } from "@app/assets/images/logo.svg";
+import { ReactComponent as Logo } from "@app/assets/images/logo_dark.svg";
 
 import NavMenu from "../NavMenu/NavMenu";
 import styles from "./NavLeftContent.module.scss";

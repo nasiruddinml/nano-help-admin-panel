@@ -25,6 +25,8 @@ export type LoginRequestDef = {
   password: string;
 };
 
+export type SignupRequestDef = LoginRequestDef & { confirmPassword?: string };
+
 export type UserDef = {
   email: string;
   name: string;
