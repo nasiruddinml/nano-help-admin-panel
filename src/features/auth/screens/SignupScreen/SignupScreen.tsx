@@ -9,6 +9,7 @@ import Button from "@app/components/atoms/Button/Button";
 import Form, { Item, useForm } from "@app/components/atoms/Form/Form";
 import { SignupRequestDef } from "@app/features/auth/auth";
 
+import { ReactComponent as Logo } from "../../../../assets/images/logo.svg";
 import { authSignup } from "../../api/auth.api";
 import styles from "./SignupScreen.module.scss";
 
@@ -35,6 +36,7 @@ const SignupScreen = () => {
   return (
     <Row justify="center" align="middle" className={styles.container}>
       <Col xs={24} sm={12} lg={6}>
+        <Logo className={styles.logo} />
         <Card title={t("auth.signupTitle")}>
           <Form form={form} onFinish={handleFinish}>
             <Item

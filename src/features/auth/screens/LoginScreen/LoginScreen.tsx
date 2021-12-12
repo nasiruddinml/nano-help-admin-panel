@@ -8,6 +8,7 @@ import Form, { Item, useForm } from "@app/components/atoms/Form/Form";
 import { LoginRequestDef } from "@app/features/auth/auth";
 import { useAppDispatch, useAppSelector } from "@app/redux/store";
 
+import { ReactComponent as Logo } from "../../../../assets/images/logo.svg";
 import useRedirectAfterLogin from "../../hooks/useRedirectAfterLogin";
 import { login } from "../../redux/auth.slice";
 import styles from "./LoginScreen.module.scss";
@@ -36,6 +37,7 @@ const LoginScreen = () => {
   return (
     <Row justify="center" align="middle" className={styles.container}>
       <Col xs={24} sm={12} lg={6}>
+        <Logo className={styles.logo} />
         <Card title={t("auth.loginTitle")}>
           <Form form={form} onFinish={handleFinish}>
             <Item
